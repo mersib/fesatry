@@ -1,0 +1,28 @@
+.jumbotronCard {
+    background: white;
+    margin-top: 3.5% !important;
+    padding-left: 1em !important;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 20px;
+}
+
+.resturantJumbotron {
+    min-height: 40vh !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+.resturantTitle {
+    margin-top: 2vh !important;
+    margin-bottom: 0 !important;
+    font-size: 36px !important;
+    font-weight: 800;
+}
+
+.resturantDescription {
+    margin-top: 8px !important;
+    font-size: 16px !important;
+}
+
+.tagsSection {
+    margin-bottom: 1vh !important;
+}

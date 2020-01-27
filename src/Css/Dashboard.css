@@ -1,0 +1,11 @@
+.dashboardContainer {
+  min-height: 88vh !important;
+}
+
+.tabsPane {
+  padding: 1em;
+}
+
+.paginationSection {
+  margin-top: 1.5vh !important;
+}

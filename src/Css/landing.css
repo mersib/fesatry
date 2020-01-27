@@ -1,0 +1,29 @@
+.landingContainer {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 93.5vh !important;
+}
+
+.inputGroupLanding {
+  margin-top: 4vh !important;
+  color: black !important;
+}
+
+.logoLanding {
+  margin-top: 5vh !important;
+  margin-left: 43%;
+  height: 15vh !important;
+}
+
+.inputOutlined {
+  outline-color: 5px solid aquamarine !important;
+}
+
+.alignEnd {
+  text-align: end !important;
+}
+
+.ant-select-selection__rendered {
+  padding-top: 4px !important;
+}

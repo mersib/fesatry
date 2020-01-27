@@ -1,0 +1,22 @@
+.foodItemCard {
+    border: 1px solid black !important;
+}
+
+.foodTitle {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 6px;
+    margin-left: 16px;
+}
+
+.foodDescription {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+.foodPrice {
+    margin-top: 6px !important;
+    margin-left: 16px;
+}

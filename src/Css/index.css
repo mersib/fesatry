@@ -1,0 +1,30 @@
+body,
+a {
+  margin: 0;
+  font-family: "Lato", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #97BC62FF !important;
+}
+
+
+
+p {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oxygen", 'Lato', serif !important;
+  color: #2C5F2D !important;
+}
+
+.onHoverPointer:hover {
+  cursor: pointer;
+}
+
+.mt10 {
+  margin-top: 10px;
+}

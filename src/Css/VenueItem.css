@@ -1,0 +1,94 @@
+.itemCard {
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.itemCard:hover {
+  transform: scale(1.1) !important;
+}
+
+.bookingSectionLeft {
+  display: inline-block;
+  float: left;
+}
+
+.bookingSectionRight {
+  display: inline-block;
+  float: right;
+}
+
+.imageContainer {
+  max-height: 25vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.venueImage {
+  background-size: cover !important;
+  max-height: 30vh;
+  width: 100%;
+}
+
+.filtersSection {
+  /* min-height: 84.155vh; */
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 1em;
+}
+
+.tagsSection {
+  /* min-height: 84.155vh; */
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 1em;
+}
+
+.filterSectionElements {
+  margin-top: 1vh !important;
+  margin-bottom: 1vh !important;
+}
+
+.tags {
+  margin-bottom: 1vh !important;
+}
+
+.textColor {
+  color: gray !important;
+  width: 2500px;
+}
+
+.venueTitle {
+  margin-top: 2vh !important;
+  margin-bottom: 0 !important;
+  font-size: 16px !important;
+  font-weight: 800;
+}
+
+.venueDescription {
+  margin-top: 0 !important;
+  margin-bottom: 1vh !important;
+  font-size: 14px !important;
+}
+
+.venueDescriptionTertiary {
+  margin-top: 0 !important;
+  margin-bottom: 0vh !important;
+  font-size: 14px !important;
+  background: #f6f6f6;
+  color: black !important;
+  padding-left: 0.2vw;
+}
+
+.venueDescriptionSecondary {
+  margin-top: 2vh !important;
+  margin-bottom: 1vh !important;
+  font-size: 14px !important;
+  background: #f6f6f6;
+  color: black !important;
+  padding-left: 0.2vw;
+}
+
+.divider {
+  max-width: 97.25% !important;
+  margin-left: 1.25% !important;
+}
