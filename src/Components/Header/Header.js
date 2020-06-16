@@ -9,7 +9,7 @@ import {
   Col,
   Icon,
   Spin,
-  message
+  message,
 } from "antd";
 import { Component } from "react";
 import "../../Css/Login.css";
@@ -23,62 +23,86 @@ class Header extends Component {
     super(props);
     this.state = {
       visible: false,
+      visible2: false,
       isLoginSelected: true,
       // login states
       email: "",
       password: "",
       loginLoading: false,
-      backPressed: 0
+      backPressed: 0,
     };
   }
 
   //Modal Functions
   showModal = () => {
     this.setState({
-      visible: true
+      visible: true,
     });
   };
 
-  handleOk = e => {
-    console.log(e);
+  showModal2 = () => {
     this.setState({
-      visible: false
+      visible2: true,
     });
   };
 
-  handleCancel = e => {
+  handleOk = (e) => {
     console.log(e);
     this.setState({
-      visible: false
+      visible: false,
     });
   };
+
+  handleCancel = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
+
+  handleOk2 = (e) => {
+    console.log(e);
+    this.setState({
+      visible2: false,
+    });
+  };
+
+  handleCancel2 = (e) => {
+    console.log(e);
+    this.setState({
+      visible2: false,
+    });
+  };
+
   handleLogoClick = () => {
     console.log("iIm insane");
     return <Redirect to="/" />;
   };
   setIsLogin() {
-    this.setState(prevState => ({
-      isLoginSelected: !prevState.isLoginSelected
+    this.setState((prevState) => ({
+      isLoginSelected: !prevState.isLoginSelected,
     }));
   }
 
   // Forms
-  LoginForm = e => {
+  LoginForm = (e) => {
     e.preventDefault();
 
     if (this.state.email.length !== 0 && this.state.password.length !== 0) {
       this.setState({
-        loginLoading: true
+        loginLoading: true,
       });
-      this.props.loginUser(this.state.email, this.state.password).then(res => {
-        if (!this.props.id_token) {
-          message.error(this.props.error_msg);
-          this.setState({ loginLoading: false });
-        } else {
-          this.setState({ loginLoading: false, visible: false });
-          message.success("Logged in succes.");
-        }
-      });
+      this.props
+        .loginUser(this.state.email, this.state.password)
+        .then((res) => {
+          if (!this.props.id_token) {
+            message.error(this.props.error_msg);
+            this.setState({ loginLoading: false });
+          } else {
+            this.setState({ loginLoading: false, visible: false });
+            message.success("Logged in succes.");
+          }
+        });
     }
   };
 
@@ -91,9 +115,9 @@ class Header extends Component {
   };
 
   // Input
-  onHandleChange = name => event => {
+  onHandleChange = (name) => (event) => {
     this.setState({
-      [name]: event.target.value
+      [name]: event.target.value,
     });
   };
 
@@ -107,19 +131,46 @@ class Header extends Component {
           extra={
             this.props.id_token
               ? [
-                  <Button key="2">Have a resturant?</Button>,
+                  <Button key="2" onClick={this.showModal}>
+                    Have a resturant?
+                  </Button>,
                   <Button onClick={this.logOutUser} key="1">
                     Log Out
-                  </Button>
+                  </Button>,
                 ]
               : [
-                  <Button key="2">Have a resturant?</Button>,
+                  <Button key="2" onClick={this.showModal2}>
+                    Have a resturant?
+                  </Button>,
                   <Button key="1" onClick={this.showModal}>
                     Login
-                  </Button>
+                  </Button>,
                 ]
           }
         />
+        <Modal
+          title="Add Resturant"
+          visible={this.state.visible2}
+          onOk={this.handleOk2}
+          onCancel={this.handleCancel2}
+        >
+          <Input
+            placeholder="Resturant Name"
+            size="large"
+            className="inputForm"
+          />
+          <Input placeholder="Owner Name" size="large" className="inputForm" />
+          <Input
+            placeholder="Resturant Address"
+            size="large"
+            className="inputForm"
+          />
+          <Input
+            placeholder="Onwer Contact Number"
+            size="large"
+            className="inputForm"
+          />
+        </Modal>
         <Modal
           title="Log In/Sign Up"
           visible={this.state.visible}
@@ -212,6 +263,19 @@ class Header extends Component {
                   <p>Forgot Password</p>
                 </Col>
               </Row>
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button"
+                disabled={
+                  this.state.password.length === 0 ||
+                  this.state.email.length === 0
+                    ? true
+                    : false
+                }
+              >
+                Submit
+              </Button>
             </div>
           )}
         </Modal>
@@ -220,12 +284,12 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     // user
     id_token: state.user.id_token,
     isLoading: state.user.isLoading,
-    error_msg: state.user.message
+    error_msg: state.user.message,
   };
 };
 

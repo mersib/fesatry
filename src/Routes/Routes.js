@@ -6,6 +6,7 @@ import LandingPage from "../Components/Landing/LandingPage";
 import VenueListings from "../Components/VenueListings/VenueListings";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import VenueItemDetails from "../Components/VenueListings/VenueItemDetails";
+import Checkout from "../Components/VenueListings/Checkout";
 
 class Routes extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class Routes extends Component {
         <Route exact path="/venues" component={VenueListings} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/venues/1" component={VenueItemDetails} />
+        <Route exact path="/checkout" component={Checkout} />
       </Switch>
     );
   }

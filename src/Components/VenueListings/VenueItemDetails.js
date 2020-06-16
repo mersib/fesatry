@@ -15,7 +15,7 @@ class VenueItemDetails extends Component {
       rating: null,
       deliveryTime: null,
       minimumOrderPrice: null,
-      deliveryFee: null
+      deliveryFee: null,
     };
   }
   componentWillMount() {
@@ -25,7 +25,7 @@ class VenueItemDetails extends Component {
       rating: this.props.location.query.rating,
       deliveryTime: this.props.location.query.deliveryTime,
       minimumOrderPrice: this.props.location.query.minimumOrderPrice,
-      deliveryFee: this.props.location.query.deliveryFee
+      deliveryFee: this.props.location.query.deliveryFee,
     });
   }
 
@@ -56,7 +56,7 @@ class VenueItemDetails extends Component {
                       style={{
                         width: "14px",
                         height: "14px",
-                        marginTop: "-0.5vh"
+                        marginTop: "-0.5vh",
                       }}
                     />
                   </Tag>
@@ -75,7 +75,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -84,7 +84,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -93,7 +93,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -102,7 +102,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -111,7 +111,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -120,7 +120,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -133,7 +133,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -142,7 +142,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -151,7 +151,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -160,7 +160,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -169,7 +169,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -178,7 +178,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -191,7 +191,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -200,7 +200,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -209,7 +209,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -218,7 +218,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -227,7 +227,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -236,7 +236,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -249,7 +249,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -258,7 +258,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -267,7 +267,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -276,7 +276,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -285,7 +285,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -294,7 +294,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -307,7 +307,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -316,7 +316,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -325,7 +325,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>
@@ -334,7 +334,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 1",
                       foodItemPrice: "500 Rs",
-                      foodItemDescription: "1.5L"
+                      foodItemDescription: "1.5L",
                     }}
                   />
                 </Col>
@@ -343,7 +343,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 2",
                       foodItemPrice: "1200 Rs",
-                      foodItemDescription: "Served with fries and cold drink"
+                      foodItemDescription: "Served with fries and cold drink",
                     }}
                   />
                 </Col>
@@ -352,7 +352,7 @@ class VenueItemDetails extends Component {
                     foodDetails={{
                       foodItemName: "Item 3",
                       foodItemPrice: "300 Rs",
-                      foodItemDescription: "Ask for vanilla or chocolate"
+                      foodItemDescription: "Ask for vanilla or chocolate",
                     }}
                   />
                 </Col>

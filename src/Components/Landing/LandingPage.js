@@ -3,7 +3,7 @@ import "../../Css/landing.css";
 import { Row, Col, Input, Select, Cascader, Button } from "antd";
 import Cooking from "../../Images/cooking.svg";
 import { Link, Redirect, withRouter } from "react-router-dom";
-
+import { Modal } from "antd";
 const { Search } = Input;
 const { Option } = Select;
 const InputGroup = Input.Group;
@@ -12,14 +12,35 @@ class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Address: null
+      Address: null,
+      visible: false,
     };
   }
+
+  showModal = () => {
+    this.setState({
+      visible: true,
+    });
+  };
+
+  handleOk = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
+
+  handleCancel = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
 
   handleSearchClicked(value) {
     if (value !== null) {
       this.setState({
-        Address: value
+        Address: value,
       });
       return <Redirect to="/venues" />;
     }
